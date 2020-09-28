@@ -8,11 +8,14 @@
   @Component
   export default class ResetButton extends Vue{
 
-    @Prop()
     public initialValue!: string;
 
     @Prop()
     public value!: string;
+
+    public created(){
+      this.initialValue = this.value;
+    }
 
     @Emit()
     public input(value: string) {
@@ -21,6 +24,7 @@
     public onClick(){
       this.input(this.initialValue);
     }
+
   }
 </script>
 
