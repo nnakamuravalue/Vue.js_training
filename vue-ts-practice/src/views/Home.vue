@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <MyButton></MyButton>
+    <MyButton greet="Hello"></MyButton>
   </div>
 </template>
 
@@ -14,5 +14,8 @@ import MyButton from "@/components/MyButton.vue"; // @ is an alias to /src
     MyButton
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  public greetText: string = "Hello";
+}
+
 </script>
