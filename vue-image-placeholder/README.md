@@ -1,4 +1,4 @@
-# tdd-vue
+# vue-image-placeholder
 
 ## Project setup
 ```
